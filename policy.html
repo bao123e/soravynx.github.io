@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chính sách &amp; quyền riêng tư — SoraVynx</title>
+    <title>Chính sách tài khoản, ví &amp; quyền riêng tư — SoraVynx</title>
     <meta
       name="description"
       content="SoraVynx — công cụ Stella Sora dành cho Windows. Khám phá tính năng, chọn gói key và liên hệ Discord @vsc.plus."
@@ -11,7 +11,7 @@
     <meta name="theme-color" content="#080e14" />
     <meta
       property="og:title"
-      content="Chính sách &amp; quyền riêng tư — SoraVynx"
+      content="Chính sách tài khoản, ví &amp; quyền riêng tư — SoraVynx"
     />
     <meta
       property="og:description"
@@ -28,12 +28,13 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
+    <script src="js/storefront.js" defer></script>
   </head>
   <body data-page="policy.html">
     <!-- Shared semantic header and navigation. -->
     <a class="skip" href="#main">Bỏ qua menu, đến nội dung</a>
     <div class="topline">
-      <span>✦</span> SoraVynx Store · Đặt key trực tiếp qua Discord
+      <span>✦</span> SoraVynx Store · QR tự động trên web và Discord
       <strong>@vsc.plus</strong>
     </div>
     <header class="site-header">
@@ -54,14 +55,8 @@
               <circle cx="9" cy="21" r="1" />
               <circle cx="18" cy="21" r="1" /></svg
             ><span class="cart-count" aria-live="polite">0</span></a
-          ><a class="btn small secondary" href="support.html"
-            ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M8 5 5 4c-2 3-3 7-3 11l4 3 2-3m8-10 3-1c2 3 3 7 3 11l-4 3-2-3M6 15c4 2 8 2 12 0M8 5c3-1 5-1 8 0"
-              />
-              <circle cx="8" cy="11" r="1" />
-              <circle cx="16" cy="11" r="1" /></svg
-            >Discord</a
+          ><a class="btn small secondary account-nav" href="account.html"
+            >Tài khoản</a
           ><button
             class="menu-toggle"
             aria-label="Mở menu"
@@ -86,81 +81,56 @@
       <section class="container narrow">
         <div class="page-intro">
           <div class="eyebrow">CLEAR FROM THE START</div>
-          <h1>Rõ ràng trước mỗi lựa chọn.</h1>
-          <p>
-            Thông tin về đặt key, giới hạn hỗ trợ và cách website lưu dữ liệu.
-          </p>
+          <h1>Rõ ràng trước khi mua.</h1>
+          <p>Thông tin về tài khoản, thanh toán và dữ liệu được lưu.</p>
         </div>
-        <article class="article-section">
-          <h2>Đặt key & thanh toán</h2>
+        <div class="checkout-panel policy-copy">
+          <h2>Tài khoản và key</h2>
           <p>
-            Website hiển thị các gói key và hỗ trợ tạo bản nháp yêu cầu. Mọi xác
-            nhận giá, thời hạn bắt đầu, phiên bản hỗ trợ, cách thanh toán và
-            giao key được thực hiện trực tiếp qua Discord
-            <strong>@vsc.plus</strong>.
-          </p>
-          <p>
-            Không có giao dịch thanh toán trên website và không có key được cấp
-            tự động. Mã SV trong yêu cầu chỉ là mã tham chiếu do trình duyệt
-            tạo, không phải bằng chứng thanh toán.
-          </p>
-        </article>
-        <article class="article-section">
-          <h2>Thời hạn & tương thích</h2>
-          <p>
-            Các gói 7 ngày, 1 tháng, 1 năm và vĩnh viễn dành cho SoraVynx
-            Windows. Gói vĩnh viễn không gia hạn theo tháng, áp dụng trong vòng
-            đời sản phẩm và các phiên bản được người bán xác nhận hỗ trợ.
+            Tài khoản web dùng tên đăng nhập và mật khẩu. Mật khẩu được băm kèm
+            salt; phiên đăng nhập dùng cookie bảo mật HttpOnly. Hiện chưa có tự
+            đặt lại mật khẩu qua email; liên hệ @vsc.plus khi cần hỗ trợ, không
+            gửi mật khẩu.
           </p>
           <p>
-            Phiên bản game thay đổi có thể ảnh hưởng đến khả năng hoạt động. Xác
-            nhận tương thích, điều kiện sử dụng, số thiết bị và thời điểm tính
-            hạn với người bán trước khi thanh toán. Android và Auto Daily chưa
-            nằm trong phạm vi các gói trên website.
+            Đơn và key trên web gắn với tài khoản mua. Đơn qua Discord giao
+            riêng cho người dùng lệnh /buy và chưa tự liên kết với tài khoản
+            web. Mã key hiện không giới hạn theo thiết bị; giữ riêng mã đã nhận.
           </p>
-        </article>
-        <article class="article-section">
-          <h2>Đổi, hoàn & hỗ trợ</h2>
+          <h2>QR và số dư ví</h2>
           <p>
-            Website chưa công bố cam kết hoàn tiền hoặc thời hạn xử lý cố định.
-            Trước khi mua, đề nghị người bán xác nhận điều kiện đổi/hoàn và hỗ
-            trợ áp dụng cho đơn của bạn. Nếu gặp vấn đề, gửi mã yêu cầu và mô tả
-            qua Discord.
-          </p>
-        </article>
-        <article class="article-section">
-          <h2>Dữ liệu trên thiết bị</h2>
-          <p>
-            Giỏ hàng và bản nháp yêu cầu được lưu bằng
-            <strong>localStorage</strong> trong trình duyệt: gói đã chọn, giá,
-            tên Discord, ghi chú, mã và thời điểm tạo. Không đồng bộ lên máy chủ
-            của cửa hàng.
+            Hệ thống tạo QR cho đúng tài khoản ảo BIDV và mã đơn. Chỉ xác nhận
+            từ thông báo SePay đã kiểm tra; ảnh biên lai hoặc nút bấm của người
+            mua không tự cộng ví hay cấp key.
           </p>
           <p>
-            Bạn có thể xóa lịch sử trong trang Đơn đã lưu hoặc xóa dữ liệu
-            website trong cài đặt trình duyệt. Không nên nhập thông tin nhạy cảm
-            khi dùng máy tính chung. Trình duyệt riêng tư hoặc chặn lưu trữ có
-            thể làm dữ liệu không được giữ lại.
+            Đơn QR có hiệu lực 30 phút. Ví chỉ dùng để mua key trên web; không
+            phải tài khoản ngân hàng. Số dư và giao dịch được lưu ở máy chủ,
+            không dựa vào dữ liệu trình duyệt. Yêu cầu hoàn tiền, chuyển sai nội
+            dung hoặc sai số tiền cần liên hệ hỗ trợ để đối soát, chưa xử lý tự
+            động.
+          </p>
+          <h2>Dữ liệu và vận hành</h2>
+          <p>
+            Máy chủ lưu tên đăng nhập, mật khẩu đã băm, phiên, số dư, sổ giao
+            dịch, đơn hàng và key. Trình duyệt chỉ giữ giỏ hàng, mã yêu cầu
+            chống mua lặp và cookie phiên; không lưu mật khẩu hoặc khóa ngân
+            hàng. SePay và ứng dụng ngân hàng xử lý giao dịch chuyển khoản.
           </p>
           <p>
-            Liên kết ngoài tới Discord/GitHub chịu chính sách của từng dịch vụ.
-            Bản xem thử được lưu trữ trên nền tảng Sites, nơi có thể yêu cầu
-            đăng nhập để truy cập.
+            Cổng thanh toán cần kết nối và hoạt động liên tục. Khi dịch vụ tạm
+            ngừng, không chuyển tiền vào QR cũ. Nếu đã chuyển, giữ mã đơn và
+            liên hệ @vsc.plus.
           </p>
-        </article>
-        <article class="article-section">
-          <h2>Giới thiệu dự án</h2>
+          <h2>Giới hạn sản phẩm</h2>
           <p>
-            SoraVynx là dự án độc lập, không đại diện hay thuộc nhà phát hành
-            Stella Sora. Các tính năng, tài liệu và gói hỗ trợ cần được kiểm tra
-            theo phiên bản thực tế.
+            Hạn key tính từ lúc cấp; vĩnh viễn là mã không có ngày hết hạn trong
+            cơ chế cấp key, không bảo đảm trò chơi hay dịch vụ luôn hoạt động.
+            SoraVynx là dự án độc lập, không thuộc nhà phát hành. Không cam kết
+            chống ban, tương thích mọi phiên bản game hoặc kết quả trong game.
           </p>
-          <p class="fine">
-            Nguồn template, font và tài nguyên tham khảo được ghi trong tài liệu
-            SOURCES.md kèm mã nguồn. Thiết kế được tùy biến từ AppLab, không sao
-            chép nội dung cửa hàng HecTranMOD.
-          </p>
-        </article>
+          <a class="btn secondary" href="support.html">Liên hệ hỗ trợ</a>
+        </div>
       </section>
     </main>
     <!-- Shared footer and accessible interaction feedback. -->
@@ -187,13 +157,16 @@
           </div>
           <div class="footer-col">
             <h3>THÔNG TIN</h3>
-            <a href="orders.html">Đơn đã lưu</a
+            <a href="orders.html">Đơn hàng &amp; key</a
             ><a href="support.html#faq">Câu hỏi thường gặp</a
             ><a href="policy.html">Chính sách & quyền riêng tư</a>
           </div>
           <div class="footer-col">
             <h3>KẾT NỐI</h3>
-            <a href="https://discord.com/app" target="_blank" rel="noopener"
+            <a
+              href="https://discord.gg/J3BevcpAxF"
+              target="_blank"
+              rel="noopener"
               >Discord ↗</a
             ><button
               data-copy="@vsc.plus"

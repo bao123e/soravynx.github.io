@@ -76,3 +76,12 @@ Template AppLab được chọn trên Freebiesbug và tùy biến cho SoraVynx. 
 Mã nguồn được để đầy đủ, không chỉ đưa ZIP vào repo. Nếu nộp bài, tải Code → Download ZIP, giải nén rồi đóng gói với tên `<tên đăng nhậpSV>_WEB302_Assignment1.zip`. Không kèm PDF đề bài hoặc PSD dung lượng lớn; PSD gốc có link trong SOURCES.md. Sinh viên cần tự đọc, điều chỉnh và tuân thủ quy định ghi nhận nguồn/công cụ của môn học.
 
 Bản rà từng tiêu chí theo PDF, vị trí HTML5/CSS3, module và các giới hạn xác minh: [docs/RA-SOAT-PDF.md](docs/RA-SOAT-PDF.md).
+
+
+## Tài khoản, ví và QR
+
+Website có 10 trang HTML, thêm account.html (cổng tài khoản) và discord.html (hướng dẫn khách dùng /buy). QR từng đơn, nạp ví, đăng nhập và key dùng backend Node.js tại bộ SoraVynx Owner Tools v0.4.0, không có secret trong GitHub Pages.
+
+Chủ shop cập nhật backend/bot rồi mở licensing/9-Connect-Website.cmd. Script kiểm tra backend mới, cập nhật store-config.json công khai và đăng ký /buy. Nếu chưa kết nối, trang tài khoản hiển thị trạng thái chưa sẵn sàng thay vì thu tiền giả. Cookie tài khoản ở hostname backend để hoạt động bên thứ nhất. Link server chính thức: https://discord.gg/J3BevcpAxF .
+
+Kiểm thử mới: qa/check-commerce.py (Python Playwright + Chromium) chạy với website ở cổng 4173 và fixture licensing/test/commerce-preview.mjs của repo SoraVynx ở 8791. Fixture chỉ dùng localhost, issuer/database riêng, webhook và đăng ký key mô phỏng; không dùng cho nhận tiền thật. qa/check.cjs cũ kiểm tra luồng bản nháp thủ công trước phiên bản tài khoản; dùng bộ commerce cho luồng mua mới.

@@ -1,0 +1,11 @@
+{
+  "static_layouts": 30,
+  "auth_cookie": "Secure/HttpOnly",
+  "duplicate_topup": "credited once",
+  "wallet_purchase": "passed",
+  "direct_qr": "passed",
+  "logout_relogin": "passed",
+  "browser_errors": [],
+  "bank_and_publishing": "simulated",
+  "live_backend_verified": false
+}

@@ -1809,3 +1809,104 @@ li a.accent,
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* Account and payment entry points, in the existing mint storefront style. */
+.checkout-panel {
+  padding: 28px;
+  background: var(--panel, #101a23);
+  border: 1px solid #2b3e4d;
+  border-radius: 18px;
+}
+.checkout-panel h2 {
+  font-size: 24px;
+  margin: 0 0 14px;
+}
+.checkout-panel p,
+.checkout-panel li {
+  color: #b3c5db;
+  line-height: 1.8;
+}
+.checkout-panel .btn {
+  margin-top: 12px;
+}
+.commerce-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.step-label {
+  display: block;
+  color: #5eead4;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.commerce-banner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 30px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border: 1px solid #315b60;
+  border-radius: 20px;
+  background: #10282c;
+}
+.commerce-banner > div {
+  flex: 1;
+}
+.commerce-banner h2 {
+  font-size: 26px;
+  margin: 0 0 10px;
+}
+.commerce-banner p {
+  color: #b3c5db;
+}
+.commerce-banner .btn {
+  flex-shrink: 0;
+}
+.purchase-list {
+  display: grid;
+  gap: 20px;
+}
+.purchase-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.purchase-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.policy-copy h2:not(:first-child) {
+  margin-top: 32px;
+}
+.account-nav {
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .commerce-steps {
+    grid-template-columns: 1fr;
+  }
+  .commerce-banner,
+  .purchase-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+  }
+  .commerce-banner .btn {
+    width: 100%;
+  }
+  .purchase-actions {
+    width: 100%;
+  }
+  .purchase-actions .btn {
+    flex: 1;
+    white-space: nowrap;
+  }
+  .checkout-panel {
+    padding: 22px;
+  }
+}

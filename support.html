@@ -25,12 +25,13 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
+    <script src="js/storefront.js" defer></script>
   </head>
   <body data-page="support.html">
     <!-- Shared semantic header and navigation. -->
     <a class="skip" href="#main">Bỏ qua menu, đến nội dung</a>
     <div class="topline">
-      <span>✦</span> SoraVynx Store · Đặt key trực tiếp qua Discord
+      <span>✦</span> SoraVynx Store · QR tự động trên web và Discord
       <strong>@vsc.plus</strong>
     </div>
     <header class="site-header">
@@ -52,14 +53,8 @@
               <circle cx="9" cy="21" r="1" />
               <circle cx="18" cy="21" r="1" /></svg
             ><span class="cart-count" aria-live="polite">0</span></a
-          ><a class="btn small secondary" href="support.html"
-            ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M8 5 5 4c-2 3-3 7-3 11l4 3 2-3m8-10 3-1c2 3 3 7 3 11l-4 3-2-3M6 15c4 2 8 2 12 0M8 5c3-1 5-1 8 0"
-              />
-              <circle cx="8" cy="11" r="1" />
-              <circle cx="16" cy="11" r="1" /></svg
-            >Discord</a
+          ><a class="btn small secondary account-nav" href="account.html"
+            >Tài khoản</a
           ><button
             class="menu-toggle"
             aria-label="Mở menu"
@@ -95,8 +90,9 @@
               <div class="eyebrow">KÊNH LIÊN HỆ CHÍNH</div>
               <h2>Gặp nhau trên Discord.</h2>
               <p class="fine">
-                Thêm bạn bằng đúng tên người dùng bên dưới. Không có tài khoản
-                hay nhóm trung gian được xác nhận trên website này.
+                Thêm bạn bằng đúng tên người dùng bên dưới. Server chính thức có
+                bot /buy để khách mua key tự động; chỉ dùng link mời trên
+                website.
               </p>
               <span class="discord-handle">@vsc.plus</span>
               <div class="actions">
@@ -107,7 +103,7 @@
                   >Sao chép tên</button
                 ><a
                   class="btn secondary"
-                  href="https://discord.com/app"
+                  href="https://discord.gg/J3BevcpAxF"
                   target="_blank"
                   rel="noopener"
                   >Mở Discord ↗</a
@@ -184,44 +180,40 @@
           <details open>
             <summary>Mình nhận key bằng cách nào?</summary>
             <p>
-              Chọn gói, tạo yêu cầu rồi sao chép nội dung gửi đến
-              <strong>@vsc.plus</strong> trên Discord. Người bán sẽ xác nhận
-              phiên bản tương thích, cách thanh toán và việc cấp key trực tiếp.
-              Website không tự cấp key.
+              Đăng nhập web để thanh toán QR từng đơn hoặc mua bằng ví. Bạn cũng
+              có thể vào server Discord dùng /buy. Key tự giao sau khi tiền được
+              xác nhận và key đăng ký xong.
             </p>
           </details>
           <details>
-            <summary>Key trên cửa hàng dùng cho nền tảng nào?</summary>
+            <summary>Có cần nạp ví trước không?</summary>
             <p>
-              Các gói tại đây dành cho SoraVynx Windows. Android đang trong quá
-              trình kiểm thử và chưa được bán key trên website này. Hãy xác nhận
-              tương thích với người bán trước khi thanh toán.
+              Không bắt buộc. Bạn có thể quét QR trả từng đơn hoặc nạp ví để mua
+              sau. Ví chỉ cộng tiền khi SePay xác nhận; không dùng số dư ví web
+              để mua qua bot.
             </p>
           </details>
           <details>
-            <summary>Vĩnh viễn được hiểu như thế nào?</summary>
+            <summary>Key dùng cho nền tảng nào?</summary>
             <p>
-              Gói không gia hạn theo tháng, áp dụng trong vòng đời sản phẩm và
-              phiên bản được người bán xác nhận hỗ trợ. Không có cam kết rằng
-              mọi cập nhật tương lai của game đều tương thích.
+              Các gói hiện dành cho SoraVynx Windows. Xác nhận tương thích trước
+              khi mua; không có cam kết chống ban hoặc hoạt động với mọi bản
+              game.
             </p>
           </details>
           <details>
-            <summary>Website có thu tiền hoặc lưu mật khẩu không?</summary>
+            <summary>Dữ liệu tài khoản được lưu ở đâu?</summary>
             <p>
-              Không. Website chỉ lưu giỏ hàng và bản nháp yêu cầu trên trình
-              duyệt này. Không yêu cầu mật khẩu game, tài khoản ngân hàng hay mã
-              OTP. Bạn thanh toán sau khi trao đổi với người bán qua Discord.
+              Đơn, key và số dư lưu ở máy chủ và gắn với tài khoản. Mật khẩu
+              được băm kèm salt. Giỏ hàng mới dùng bộ nhớ trình duyệt; xóa dữ
+              liệu trình duyệt không xóa đơn đã mua trong tài khoản.
             </p>
           </details>
           <details>
-            <summary>
-              Xóa dữ liệu trình duyệt thì đơn hàng có mất không?
-            </summary>
+            <summary>Đã chuyển tiền nhưng chưa có key?</summary>
             <p>
-              Có. Đơn được lưu bằng Web Storage tại thiết bị bạn đang dùng, chưa
-              đồng bộ lên máy chủ. Bạn nên tải bản yêu cầu về hoặc lưu lại nội
-              dung đã gửi trên Discord.
+              Kiểm tra đúng mã đơn và số tiền. Giữ biên lai, liên hệ @vsc.plus
+              để đối soát; không chuyển thêm hoặc tạo lại đơn để trả khoản cũ.
             </p>
           </details>
         </div>
@@ -251,13 +243,16 @@
           </div>
           <div class="footer-col">
             <h3>THÔNG TIN</h3>
-            <a href="orders.html">Đơn đã lưu</a
+            <a href="orders.html">Đơn hàng &amp; key</a
             ><a href="support.html#faq">Câu hỏi thường gặp</a
             ><a href="policy.html">Chính sách & quyền riêng tư</a>
           </div>
           <div class="footer-col">
             <h3>KẾT NỐI</h3>
-            <a href="https://discord.com/app" target="_blank" rel="noopener"
+            <a
+              href="https://discord.gg/J3BevcpAxF"
+              target="_blank"
+              rel="noopener"
               >Discord ↗</a
             ><button
               data-copy="@vsc.plus"

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hướng dẫn đặt key &amp; sử dụng SoraVynx</title>
+    <title>Cách mua key trên web và Discord — SoraVynx</title>
     <meta
       name="description"
       content="SoraVynx — công cụ Stella Sora dành cho Windows. Khám phá tính năng, chọn gói key và liên hệ Discord @vsc.plus."
@@ -11,7 +11,7 @@
     <meta name="theme-color" content="#080e14" />
     <meta
       property="og:title"
-      content="Hướng dẫn đặt key &amp; sử dụng SoraVynx"
+      content="Cách mua key trên web và Discord — SoraVynx"
     />
     <meta
       property="og:description"
@@ -28,12 +28,13 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
+    <script src="js/storefront.js" defer></script>
   </head>
   <body data-page="guide.html">
     <!-- Shared semantic header and navigation. -->
     <a class="skip" href="#main">Bỏ qua menu, đến nội dung</a>
     <div class="topline">
-      <span>✦</span> SoraVynx Store · Đặt key trực tiếp qua Discord
+      <span>✦</span> SoraVynx Store · QR tự động trên web và Discord
       <strong>@vsc.plus</strong>
     </div>
     <header class="site-header">
@@ -55,14 +56,8 @@
               <circle cx="9" cy="21" r="1" />
               <circle cx="18" cy="21" r="1" /></svg
             ><span class="cart-count" aria-live="polite">0</span></a
-          ><a class="btn small secondary" href="support.html"
-            ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M8 5 5 4c-2 3-3 7-3 11l4 3 2-3m8-10 3-1c2 3 3 7 3 11l-4 3-2-3M6 15c4 2 8 2 12 0M8 5c3-1 5-1 8 0"
-              />
-              <circle cx="8" cy="11" r="1" />
-              <circle cx="16" cy="11" r="1" /></svg
-            >Discord</a
+          ><a class="btn small secondary account-nav" href="account.html"
+            >Tài khoản</a
           ><button
             class="menu-toggle"
             aria-label="Mở menu"
@@ -86,109 +81,63 @@
       </div>
       <section class="container">
         <div class="page-intro">
-          <div class="eyebrow">START HERE</div>
-          <h1>Từ chọn key đến sẵn sàng.</h1>
+          <div class="eyebrow">TWO WAYS IN</div>
+          <h1>Mua theo cách của bạn.</h1>
           <p>
-            Các bước đặt hàng, nhận hướng dẫn và thiết lập SoraVynx trên
-            Windows.
+            Web để quản lý ví và lịch sử. Discord để quét QR và nhận key ngay
+            trong bot.
           </p>
         </div>
-        <div class="content-grid">
-          <nav class="contents" aria-label="Mục lục hướng dẫn">
-            <a href="#before">Trước khi mua</a><a href="#purchase">Đặt key</a
-            ><a href="#setup">Thiết lập tool</a
-            ><a href="#custom">Tùy chỉnh giao diện</a
-            ><a href="#trouble">Khi cần hỗ trợ</a>
-          </nav>
-          <div>
-            <article class="article-section" id="before">
-              <h2>01. Kiểm tra trước khi mua</h2>
-              <p>
-                Chuẩn bị phiên bản Stella Sora và phiên bản Windows của bạn. Gửi
-                thông tin cho <strong>@vsc.plus</strong> để xác nhận khả năng
-                tương thích trước khi thanh toán.
-              </p>
-              <div class="notice">
-                Các gói trên cửa hàng dành cho Windows. Không dùng trang này để
-                mua key Android hoặc cam kết Auto Daily.
-              </div>
-            </article>
-            <article class="article-section" id="purchase">
-              <h2>02. Tạo yêu cầu đặt key</h2>
-              <ol>
-                <li>
-                  Mở <a class="accent" href="shop.html">Cửa hàng</a>, chọn một
-                  trong bốn thời hạn.
-                </li>
-                <li>Vào giỏ hàng. Điền tên Discord và ghi chú nếu cần.</li>
-                <li>
-                  Chọn “Tạo yêu cầu đặt key”. Bản nháp được lưu tại trình duyệt
-                  này.
-                </li>
-                <li>
-                  Sao chép yêu cầu, mở Discord và gửi cho
-                  <strong>@vsc.plus</strong>. Đơn chưa được gửi tự động.
-                </li>
-                <li>
-                  Chỉ thanh toán sau khi người bán xác nhận đúng gói, phiên bản
-                  và hướng dẫn nhận key.
-                </li>
-              </ol>
-            </article>
-            <article class="article-section" id="setup">
-              <h2>03. Thiết lập theo hướng dẫn nhận được</h2>
-              <p>
-                Dùng đúng bản phát hành và hướng dẫn mà người bán xác nhận cho
-                phiên bản game của bạn. Không nhập mật khẩu game hoặc mã OTP lên
-                website này.
-              </p>
-              <p>
-                Trong giao diện SoraVynx Windows, phím
-                <kbd class="keyboard">F1</kbd> dùng để ẩn/hiện bảng điều khiển.
-                Các tùy chọn Player và Event được tách riêng; kiểm tra từng mục
-                bạn định dùng.
-              </p>
-              <p>
-                Nút <strong>Disable all</strong> tắt nhanh các tùy chọn đang
-                bật. Hỏi người bán khi phiên bản game thay đổi hoặc khi tool
-                không phản hồi như hướng dẫn.
-              </p>
-            </article>
-            <article class="article-section" id="custom">
-              <h2>04. Tạo giao diện mang chất riêng</h2>
-              <p>
-                Mở <strong>Custom BG</strong>, chọn ảnh có sẵn trên máy. Ảnh nền
-                phủ toàn bộ giao diện, có các điều chỉnh độ trong suốt cho ảnh
-                nền, panel và nút bấm.
-              </p>
-              <p>
-                Giữ tương phản đủ rõ để đọc chữ và trạng thái bật/tắt. Bạn có
-                thể xóa ảnh nền để trở về giao diện tối mặc định.
-              </p>
-            </article>
-            <article class="article-section" id="trouble">
-              <h2>05. Gửi yêu cầu hỗ trợ rõ ràng</h2>
-              <p>
-                Gửi mã yêu cầu đã lưu, phiên bản game, phiên bản tool, mô tả lỗi
-                và ảnh chụp qua Discord. Không gửi mật khẩu, OTP hoặc thông tin
-                đăng nhập game.
-              </p>
-              <div class="actions">
-                <a class="btn secondary" href="support.html"
-                  >Soạn nội dung hỗ trợ<svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path d="M5 12h14m-6-6 6 6-6 6" /></svg></a
-                ><a class="link" href="orders.html"
-                  >Xem đơn đã lưu
-                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M5 12h14m-6-6 6 6-6 6" /></svg
-                ></a>
-              </div>
-            </article>
-          </div>
+        <div class="commerce-steps">
+          <article class="checkout-panel">
+            <h2>QR cho từng đơn trên web.</h2>
+            <ol>
+              <li>Đăng ký hoặc đăng nhập.</li>
+              <li>Chọn gói và phương thức QR BIDV.</li>
+              <li>Quét QR, giữ đúng số tiền và mã SVX…</li>
+              <li>Chờ xác nhận; key hiện ở Đơn hàng &amp; key.</li>
+            </ol>
+            <a class="btn" href="account.html">Mua trên web</a>
+          </article>
+          <article class="checkout-panel">
+            <h2>Nạp ví rồi mua key.</h2>
+            <ol>
+              <li>Mở ví trong tài khoản.</li>
+              <li>Nhập số tiền nạp và quét QR của đơn nạp.</li>
+              <li>Khi ví đã cộng tiền, chọn gói và “Số dư ví”.</li>
+              <li>Hệ thống trừ đúng giá một lần, đăng ký và giao key.</li>
+            </ol>
+            <a class="btn secondary" href="account.html?view=wallet">Mở ví</a>
+          </article>
+          <article class="checkout-panel">
+            <h2>Mua qua Discord.</h2>
+            <ol>
+              <li>Vào server SoraVynx.</li>
+              <li>Gõ /buy và chọn plan.</li>
+              <li>Quét QR bot gửi riêng.</li>
+              <li>Nhận key ở tin QR hoặc DM sau xác nhận.</li>
+            </ol>
+            <a class="btn secondary" href="discord.html"
+              >Hướng dẫn chi tiết ↗</a
+            >
+          </article>
+          <article class="checkout-panel">
+            <h2>Dùng mã truy cập.</h2>
+            <p>
+              Mở bản tool khớp bộ key, nhập mã 15 ký tự đã nhận và bấm “Vào
+              tool”. Cần Internet để kiểm tra key. Thời hạn tính từ lúc cấp.
+            </p>
+            <p>
+              Không có cam kết chống ban hoặc luôn tương thích mọi bản cập nhật
+              game. Liên hệ @vsc.plus trước khi mua nếu cần kiểm tra khả năng sử
+              dụng.
+            </p>
+          </article>
+        </div>
+        <div class="notice" style="margin-top: 24px">
+          Đã chuyển tiền nhưng chưa có key? Giữ nguyên đơn, mã SVX… và biên lai
+          để hỗ trợ đối soát. Không tự chuyển thêm hoặc tạo đơn mới để trả lại
+          khoản cũ.
         </div>
       </section>
     </main>
@@ -216,13 +165,16 @@
           </div>
           <div class="footer-col">
             <h3>THÔNG TIN</h3>
-            <a href="orders.html">Đơn đã lưu</a
+            <a href="orders.html">Đơn hàng &amp; key</a
             ><a href="support.html#faq">Câu hỏi thường gặp</a
             ><a href="policy.html">Chính sách & quyền riêng tư</a>
           </div>
           <div class="footer-col">
             <h3>KẾT NỐI</h3>
-            <a href="https://discord.com/app" target="_blank" rel="noopener"
+            <a
+              href="https://discord.gg/J3BevcpAxF"
+              target="_blank"
+              rel="noopener"
               >Discord ↗</a
             ><button
               data-copy="@vsc.plus"

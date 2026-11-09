@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Đơn đã lưu trên thiết bị — SoraVynx</title>
+    <title>Đơn hàng &amp; key của tôi — SoraVynx</title>
     <meta
       name="description"
       content="SoraVynx — công cụ Stella Sora dành cho Windows. Khám phá tính năng, chọn gói key và liên hệ Discord @vsc.plus."
     />
     <meta name="theme-color" content="#080e14" />
-    <meta property="og:title" content="Đơn đã lưu trên thiết bị — SoraVynx" />
+    <meta property="og:title" content="Đơn hàng &amp; key của tôi — SoraVynx" />
     <meta
       property="og:description"
       content="SoraVynx — công cụ Stella Sora dành cho Windows. Khám phá tính năng, chọn gói key và liên hệ Discord @vsc.plus."
@@ -25,12 +25,13 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
+    <script src="js/storefront.js" defer></script>
   </head>
   <body data-page="orders.html">
     <!-- Shared semantic header and navigation. -->
     <a class="skip" href="#main">Bỏ qua menu, đến nội dung</a>
     <div class="topline">
-      <span>✦</span> SoraVynx Store · Đặt key trực tiếp qua Discord
+      <span>✦</span> SoraVynx Store · QR tự động trên web và Discord
       <strong>@vsc.plus</strong>
     </div>
     <header class="site-header">
@@ -51,14 +52,8 @@
               <circle cx="9" cy="21" r="1" />
               <circle cx="18" cy="21" r="1" /></svg
             ><span class="cart-count" aria-live="polite">0</span></a
-          ><a class="btn small secondary" href="support.html"
-            ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M8 5 5 4c-2 3-3 7-3 11l4 3 2-3m8-10 3-1c2 3 3 7 3 11l-4 3-2-3M6 15c4 2 8 2 12 0M8 5c3-1 5-1 8 0"
-              />
-              <circle cx="8" cy="11" r="1" />
-              <circle cx="16" cy="11" r="1" /></svg
-            >Discord</a
+          ><a class="btn small secondary account-nav" href="account.html"
+            >Tài khoản</a
           ><button
             class="menu-toggle"
             aria-label="Mở menu"
@@ -77,54 +72,32 @@
       <div class="container">
         <nav class="breadcrumbs" aria-label="Đường dẫn">
           <a href="index.html">Trang chủ</a><span aria-hidden="true">/</span
-          ><span>Đơn đã lưu</span>
+          ><span>Đơn hàng & key</span>
         </nav>
       </div>
       <section class="container narrow">
         <div class="page-intro">
-          <div class="eyebrow">LOCAL ORDER HISTORY</div>
-          <h1>Những lựa chọn đã lưu.</h1>
+          <div class="eyebrow">YOUR ACCESS LIBRARY</div>
+          <h1>Đơn hàng &amp; key của bạn.</h1>
           <p>
-            Bản nháp yêu cầu trên trình duyệt này. Lịch sử không phản ánh trạng
-            thái thanh toán hay cấp key từ người bán.
+            Đơn mua trên web được lưu trong tài khoản. Đăng nhập để xem key đã
+            đăng ký, trạng thái QR và lịch sử ví.
           </p>
         </div>
-        <div class="notice">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="9" />
-            <path d="M12 11v6m0-10h.01" /></svg
-          >Bạn cần tự gửi nội dung qua Discord. Trạng thái thực tế được xác nhận
-          trong cuộc trò chuyện với @vsc.plus.
+        <div class="checkout-panel">
+          <h2>Mở thư viện key.</h2>
+          <p>
+            Key chỉ hiển thị trong tài khoản đã mua. Trạng thái “đang đăng ký”
+            nghĩa là đã nhận tiền và hệ thống đang hoàn tất cấp key.
+          </p>
+          <a class="btn" href="account.html?view=orders">Đăng nhập xem key</a>
         </div>
-        <div id="orders-list"></div>
-        <div class="empty" id="orders-empty" hidden>
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M12 5c-3-2-7-2-10 0v15c3-2 7-2 10 0 3-2 7-2 10 0V5c-3-2-7-2-10 0zm0 0v15"
-            />
-          </svg>
-          <h2>Chưa có yêu cầu nào được lưu.</h2>
-          <p>Chọn gói key rồi tạo yêu cầu trong giỏ hàng để bắt đầu.</p>
-          <a class="btn" href="shop.html"
-            >Chọn gói key<svg
-              class="icon"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M5 12h14m-6-6 6 6-6 6" /></svg
-          ></a>
-        </div>
-        <div class="actions" id="orders-actions" hidden>
-          <button id="clear-orders" class="btn secondary">
-            Xóa lịch sử trên thiết bị
-          </button>
-        </div>
-        <p class="fine" style="margin-top: 25px">
-          Chỉ xóa bản lưu trong trình duyệt, không hủy đơn đã trao đổi với người
-          bán.
+        <p class="fine">
+          Mua qua Discord? Kiểm tra tin /buy hoặc DM của bot. Đơn Discord không
+          tự nhập vào tài khoản web.
         </p>
+        <a href="discord.html">Hướng dẫn mua và nhận key qua bot ↗</a>
       </section>
-      <div class="section"></div>
     </main>
     <!-- Shared footer and accessible interaction feedback. -->
     <footer class="site-footer">
@@ -150,13 +123,16 @@
           </div>
           <div class="footer-col">
             <h3>THÔNG TIN</h3>
-            <a href="orders.html">Đơn đã lưu</a
+            <a href="orders.html">Đơn hàng &amp; key</a
             ><a href="support.html#faq">Câu hỏi thường gặp</a
             ><a href="policy.html">Chính sách & quyền riêng tư</a>
           </div>
           <div class="footer-col">
             <h3>KẾT NỐI</h3>
-            <a href="https://discord.com/app" target="_blank" rel="noopener"
+            <a
+              href="https://discord.gg/J3BevcpAxF"
+              target="_blank"
+              rel="noopener"
               >Discord ↗</a
             ><button
               data-copy="@vsc.plus"
