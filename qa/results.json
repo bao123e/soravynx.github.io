@@ -1,0 +1,27 @@
+{
+  "html_pages": 8,
+  "responsive_views_checked": 24,
+  "widths": [
+    375,
+    768,
+    1440
+  ],
+  "flows": [
+    "search and sort",
+    "duplicate protection",
+    "detail plan selection",
+    "cart persistence and removal",
+    "order validation and draft",
+    "safe text rendering",
+    "download request",
+    "order history and deletion",
+    "support form",
+    "keyboard tabs",
+    "mobile navigation",
+    "corrupt and denied storage"
+  ],
+  "critical_or_serious_axe_violations": [],
+  "page_errors": [],
+  "browser": "Chromium 154.0.8037.57",
+  "game_or_payment_actions": "None"
+}

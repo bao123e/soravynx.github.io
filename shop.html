@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cửa hàng key SoraVynx</title>
+    <meta
+      name="description"
+      content="SoraVynx — công cụ Stella Sora dành cho Windows. Khám phá tính năng, chọn gói key và liên hệ Discord @vsc.plus."
+    />
+    <meta name="theme-color" content="#080e14" />
+    <meta property="og:title" content="Cửa hàng key SoraVynx" />
+    <meta
+      property="og:description"
+      content="SoraVynx — công cụ Stella Sora dành cho Windows. Khám phá tính năng, chọn gói key và liên hệ Discord @vsc.plus."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="fonts/BeVietnamPro-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body data-page="shop.html">
+    <!-- Shared semantic header and navigation. -->
+    <a class="skip" href="#main">Bỏ qua menu, đến nội dung</a>
+    <div class="topline">
+      <span>✦</span> SoraVynx Store · Đặt key trực tiếp qua Discord
+      <strong>@vsc.plus</strong>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="SoraVynx — Trang chủ"
+          ><img src="images/brand.webp" alt="" width="40" height="40" /><span
+            >Sora<i>Vynx</i></span
+          ></a
+        >
+        <nav class="nav" id="main-nav" aria-label="Điều hướng chính">
+          <a href="index.html">Trang chủ</a
+          ><a href="shop.html" aria-current="page">Cửa hàng</a
+          ><a href="guide.html">Hướng dẫn</a><a href="support.html">Hỗ trợ</a>
+        </nav>
+        <div class="header-actions">
+          <a class="cart-link" href="cart.html" aria-label="Giỏ hàng"
+            ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m3 3 2 2 2 12h12l2-9H6" />
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="18" cy="21" r="1" /></svg
+            ><span class="cart-count" aria-live="polite">0</span></a
+          ><a class="btn small secondary" href="support.html"
+            ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M8 5 5 4c-2 3-3 7-3 11l4 3 2-3m8-10 3-1c2 3 3 7 3 11l-4 3-2-3M6 15c4 2 8 2 12 0M8 5c3-1 5-1 8 0"
+              />
+              <circle cx="8" cy="11" r="1" />
+              <circle cx="16" cy="11" r="1" /></svg
+            >Discord</a
+          ><button
+            class="menu-toggle"
+            aria-label="Mở menu"
+            aria-controls="main-nav"
+            aria-expanded="false"
+          >
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Unique page content. -->
+    <main id="main">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Đường dẫn">
+          <a href="index.html">Trang chủ</a><span aria-hidden="true">/</span
+          ><span>Cửa hàng</span>
+        </nav>
+      </div>
+      <section class="container">
+        <div class="page-intro">
+          <div class="eyebrow">THE ACCESS COLLECTION</div>
+          <h1>Chọn key. Mở trải nghiệm.</h1>
+          <p>
+            Một bộ tính năng, nhiều lựa chọn thời hạn. Chọn gói phù hợp với hành
+            trình của bạn.
+          </p>
+        </div>
+        <div class="notice">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 11v6m0-10h.01" /></svg
+          >Các gói dành cho Windows. Đơn được người bán xác nhận và xử lý qua
+          Discord <strong>@vsc.plus</strong>.
+        </div>
+        <div class="filter-bar">
+          <div class="search-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10" cy="10" r="6" />
+              <path d="m15 15 6 6" /></svg
+            ><input
+              id="plan-search"
+              type="search"
+              placeholder="Tìm gói key, ví dụ: 1 tháng…"
+              aria-label="Tìm kiếm gói key"
+            />
+          </div>
+          <span class="filter-chip">Stella Sora · Windows</span
+          ><select id="plan-sort" aria-label="Sắp xếp gói">
+            <option value="duration">Thời hạn tăng dần</option>
+            <option value="price-asc">Giá thấp đến cao</option>
+            <option value="price-desc">Giá cao đến thấp</option>
+          </select>
+        </div>
+        <div class="shop-product-top">
+          <div>
+            <h2>SoraVynx Tool</h2>
+            <p>Player · Event · Custom Background</p>
+          </div>
+          <a class="link" href="product.html"
+            >Chi tiết tool
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+          ></a>
+        </div>
+        <p class="filter-meta" id="filter-count" aria-live="polite">
+          4 gói key
+        </p>
+        <div class="shop-plan-row">
+          <div class="plans" id="plan-grid">
+            <article
+              class="plan"
+              data-plan-card="week"
+              data-price="29000"
+              data-duration="7"
+            >
+              <span class="popular">SORAVYNX ACCESS</span>
+              <h3>7 ngày</h3>
+              <p>Làm quen với SoraVynx.</p>
+              <div class="plan-price">29.000đ</div>
+              <div class="plan-duration">07 DAYS · Windows</div>
+              <ul class="feature-list">
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6" /></svg
+                  >Player & Event
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6" /></svg
+                  >Tùy chỉnh giao diện
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6" /></svg
+                  >Hỗ trợ qua Discord
+                </li>
+              </ul>
+              <button class="btn secondary block" data-add="week">
+                Chọn gói này<svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" />
+                </svg>
+              </button>
+            </article>
+            <article
+              class="plan featured"
+              data-plan-card="month"
+              data-price="79000"
+              data-duration="30"
+            >
+              <span class="popular">GỢI Ý BẮT ĐẦU</span>
+              <h3>1 tháng</h3>
+              <p>Cho những cuộc chơi mỗi ngày.</p>
+              <div class="plan-price">79.000đ</div>
+              <div class="plan-duration">30 DAYS · Windows</div>
+              <ul class="feature-list">
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6" /></svg
+                  >Player & Event
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6" /></svg
+                  >Tùy chỉnh giao diện
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6" /></svg
+                  >Hỗ trợ qua Discord
+                </li>
+              </ul>
+              <button class="btn block" data-add="month">
+                Chọn gói này<svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" />
+                </svg>
+              </button>
+            </article>
+            <article
+              class="plan"
+              data-plan-card="year"
+              data-price="499000"
+              data-duration="365"
+            >
+              <span class="popular">SORAVYNX ACCESS</span>
+              <h3>1 năm</h3>
+              <p>Đồng hành trong hành trình dài.</p>
+              <div class="plan-price">499.000đ</div>
+              <div class="plan-duration">365 DAYS · Windows</div>
+              <ul class="feature-list">
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6" /></svg
+                  >Player & Event
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6" /></svg
+                  >Tùy chỉnh giao diện
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6" /></svg
+                  >Hỗ trợ qua Discord
+                </li>
+              </ul>
+              <button class="btn secondary block" data-add="year">
+                Chọn gói này<svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" />
+                </svg>
+              </button>
+            </article>
+            <article
+              class="plan"
+              data-plan-card="lifetime"
+              data-price="999000"
+              data-duration="99999"
+            >
+              <span class="popular">SORAVYNX ACCESS</span>
+              <h3>Vĩnh viễn</h3>
+              <p>Một lần mua, không gia hạn.</p>
+              <div class="plan-price">999.000đ</div>
+              <div class="plan-duration">LIFETIME · Windows</div>
+              <ul class="feature-list">
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6" /></svg
+                  >Player & Event
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6" /></svg
+                  >Tùy chỉnh giao diện
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6" /></svg
+                  >Hỗ trợ qua Discord
+                </li>
+              </ul>
+              <button class="btn secondary block" data-add="lifetime">
+                Chọn gói này<svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" />
+                </svg>
+              </button>
+            </article>
+          </div>
+        </div>
+        <div class="empty" id="no-results" hidden>
+          <h2>Không tìm thấy gói phù hợp</h2>
+          <p>Thử “7 ngày”, “1 tháng”, “1 năm” hoặc “vĩnh viễn”.</p>
+          <button class="btn secondary" id="reset-search">Xóa tìm kiếm</button>
+        </div>
+        <p class="price-note">
+          Giá hiển thị bằng VNĐ. Không thu tiền trên website. Không tự động gia
+          hạn.
+        </p>
+      </section>
+      <section class="section container">
+        <div class="cta-banner">
+          <div>
+            <h2>Chọn đúng trước khi mua.</h2>
+            <p>Hỏi về phiên bản game, khả năng tương thích hoặc gói dài hạn.</p>
+          </div>
+          <a class="btn secondary" href="support.html"
+            >Mình cần tư vấn<svg
+              class="icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+          ></a>
+        </div>
+      </section>
+    </main>
+    <!-- Shared footer and accessible interaction feedback. -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="brand" href="index.html" aria-label="SoraVynx — Trang chủ"
+              ><img
+                src="images/brand.webp"
+                alt=""
+                width="40"
+                height="40"
+              /><span>Sora<i>Vynx</i></span></a
+            >
+            <p>Không gian của bạn.<br />Trải nghiệm theo cách của bạn.</p>
+            <span class="tag">STELLA SORA · WINDOWS</span>
+          </div>
+          <div class="footer-col">
+            <h3>KHÁM PHÁ</h3>
+            <a href="shop.html">Cửa hàng key</a
+            ><a href="product.html">Về SoraVynx</a
+            ><a href="guide.html">Hướng dẫn sử dụng</a>
+          </div>
+          <div class="footer-col">
+            <h3>THÔNG TIN</h3>
+            <a href="orders.html">Đơn đã lưu</a
+            ><a href="support.html#faq">Câu hỏi thường gặp</a
+            ><a href="policy.html">Chính sách & quyền riêng tư</a>
+          </div>
+          <div class="footer-col">
+            <h3>KẾT NỐI</h3>
+            <a href="https://discord.com/app" target="_blank" rel="noopener"
+              >Discord ↗</a
+            ><button
+              data-copy="@vsc.plus"
+              aria-label="Sao chép Discord @vsc.plus"
+            >
+              @vsc.plus
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="8" y="8" width="12" height="12" rx="2" />
+                <path d="M16 8V4H4v12h4" />
+              </svg></button
+            ><a
+              href="https://github.com/bao123e/SoraVynx"
+              target="_blank"
+              rel="noopener"
+              >Dự án trên GitHub ↗</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© 2026 SoraVynx. Dự án độc lập, không thuộc nhà phát hành Stella
+            Sora.</span
+          ><span
+            >Made for your next adventure.
+            <span aria-hidden="true">✦</span></span
+          >
+        </div>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <noscript
+      ><div class="notice">
+        Bật JavaScript để dùng giỏ hàng và tạo yêu cầu. Bạn vẫn có thể xem nội
+        dung và liên hệ Discord @vsc.plus.
+      </div></noscript
+    >
+  </body>
+</html>

@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Giỏ hàng &amp; yêu cầu đặt key — SoraVynx</title>
+    <meta
+      name="description"
+      content="SoraVynx — công cụ Stella Sora dành cho Windows. Khám phá tính năng, chọn gói key và liên hệ Discord @vsc.plus."
+    />
+    <meta name="theme-color" content="#080e14" />
+    <meta
+      property="og:title"
+      content="Giỏ hàng &amp; yêu cầu đặt key — SoraVynx"
+    />
+    <meta
+      property="og:description"
+      content="SoraVynx — công cụ Stella Sora dành cho Windows. Khám phá tính năng, chọn gói key và liên hệ Discord @vsc.plus."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="fonts/BeVietnamPro-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body data-page="cart.html">
+    <!-- Shared semantic header and navigation. -->
+    <a class="skip" href="#main">Bỏ qua menu, đến nội dung</a>
+    <div class="topline">
+      <span>✦</span> SoraVynx Store · Đặt key trực tiếp qua Discord
+      <strong>@vsc.plus</strong>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="SoraVynx — Trang chủ"
+          ><img src="images/brand.webp" alt="" width="40" height="40" /><span
+            >Sora<i>Vynx</i></span
+          ></a
+        >
+        <nav class="nav" id="main-nav" aria-label="Điều hướng chính">
+          <a href="index.html">Trang chủ</a><a href="shop.html">Cửa hàng</a
+          ><a href="guide.html">Hướng dẫn</a><a href="support.html">Hỗ trợ</a>
+        </nav>
+        <div class="header-actions">
+          <a class="cart-link" href="cart.html" aria-label="Giỏ hàng"
+            ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m3 3 2 2 2 12h12l2-9H6" />
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="18" cy="21" r="1" /></svg
+            ><span class="cart-count" aria-live="polite">0</span></a
+          ><a class="btn small secondary" href="support.html"
+            ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M8 5 5 4c-2 3-3 7-3 11l4 3 2-3m8-10 3-1c2 3 3 7 3 11l-4 3-2-3M6 15c4 2 8 2 12 0M8 5c3-1 5-1 8 0"
+              />
+              <circle cx="8" cy="11" r="1" />
+              <circle cx="16" cy="11" r="1" /></svg
+            >Discord</a
+          ><button
+            class="menu-toggle"
+            aria-label="Mở menu"
+            aria-controls="main-nav"
+            aria-expanded="false"
+          >
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Unique page content. -->
+    <main id="main">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Đường dẫn">
+          <a href="index.html">Trang chủ</a><span aria-hidden="true">/</span
+          ><span>Giỏ hàng</span>
+        </nav>
+      </div>
+      <section class="container">
+        <div class="page-intro">
+          <div class="eyebrow">YOUR NEXT ADVENTURE</div>
+          <h1>Giỏ hàng của bạn.</h1>
+          <p>Kiểm tra gói key, tạo yêu cầu và gửi trực tiếp đến @vsc.plus.</p>
+        </div>
+        <div id="storage-warning" class="notice warning" hidden>
+          Trình duyệt không cho lưu Web Storage. Giữ lại nội dung yêu cầu trước
+          khi đóng trang.
+        </div>
+        <div id="cart-empty" class="empty" hidden>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16l-1 14H5zM8 8V6a4 4 0 0 1 8 0v2" />
+          </svg>
+          <h2>Hành trình bắt đầu bằng một lựa chọn.</h2>
+          <p>Bạn chưa thêm gói key nào vào giỏ hàng.</p>
+          <a class="btn" href="shop.html"
+            >Khám phá cửa hàng<svg
+              class="icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+          ></a>
+        </div>
+        <div id="checkout-content" class="cart-layout">
+          <div>
+            <div id="cart-items"></div>
+            <a class="link" href="shop.html">← Tiếp tục xem cửa hàng</a>
+            <div class="spacer"></div>
+            <form id="checkout-form">
+              <h2 style="font-size: 24px">Thông tin liên hệ</h2>
+              <div class="field">
+                <label for="customer-discord"
+                  >Tên người dùng Discord của bạn
+                  <span class="accent">*</span></label
+                ><input
+                  id="customer-discord"
+                  type="text"
+                  maxlength="80"
+                  minlength="2"
+                  required
+                  placeholder="Ví dụ: ten_cua_ban"
+                  autocomplete="off"
+                /><small
+                  >Dùng để ghi vào yêu cầu, không dùng để đăng nhập.</small
+                >
+              </div>
+              <div class="field">
+                <label for="order-note">Ghi chú cho người bán</label
+                ><textarea
+                  id="order-note"
+                  maxlength="1000"
+                  placeholder="Phiên bản game, thời điểm muốn bắt đầu hoặc câu hỏi…"
+                ></textarea>
+              </div>
+              <label class="check-label"
+                ><input id="agree-order" type="checkbox" required /><span
+                  >Tôi hiểu đây là yêu cầu cần gửi qua Discord, chưa thanh toán
+                  và chưa được cấp key. Tôi đã đọc
+                  <a class="accent" href="policy.html">chính sách</a>.</span
+                ></label
+              ><button class="btn block" type="submit">
+                Tạo yêu cầu đặt key
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14m-6-6 6 6-6 6" />
+                </svg>
+              </button>
+            </form>
+          </div>
+          <aside class="order-summary">
+            <h2>Tóm tắt yêu cầu</h2>
+            <div id="summary-lines"></div>
+            <div class="summary-row total">
+              <span>Tổng giá</span><strong id="cart-total">0đ</strong>
+            </div>
+            <p class="fine" style="margin-top: 20px">
+              Xác nhận gói và cách thanh toán trực tiếp qua Discord
+              <strong class="accent">@vsc.plus</strong>.
+            </p>
+            <p class="local-note">
+              Giỏ hàng lưu trên thiết bị này. Website không xử lý thanh toán và
+              không tự gửi đơn.
+            </p>
+          </aside>
+        </div>
+        <div id="order-success" class="order-confirmation" hidden>
+          <div class="eyebrow">DRAFT READY</div>
+          <h2>Yêu cầu đã sẵn sàng.</h2>
+          <p>
+            Chưa gửi đến người bán. Sao chép nội dung dưới đây và gửi cho
+            <strong>@vsc.plus</strong> trên Discord để được xác nhận.
+          </p>
+          <pre class="report-box" id="order-report"></pre>
+          <div class="actions">
+            <button class="btn" id="copy-order">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="8" y="8" width="12" height="12" rx="2" />
+                <path d="M16 8V4H4v12h4" /></svg
+              >Sao chép yêu cầu</button
+            ><a
+              class="btn secondary"
+              href="https://discord.com/app"
+              target="_blank"
+              rel="noopener"
+              >Mở Discord ↗</a
+            ><button class="btn secondary" id="download-order">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4" /></svg
+              >Tải bản yêu cầu
+            </button>
+          </div>
+          <p class="local-note">
+            Bản nháp đã lưu trong “Đơn đã lưu” trên trình duyệt này.
+          </p>
+          <a class="link" href="orders.html"
+            >Xem đơn đã lưu
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+          ></a>
+        </div>
+      </section>
+      <div class="section"></div>
+    </main>
+    <!-- Shared footer and accessible interaction feedback. -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="brand" href="index.html" aria-label="SoraVynx — Trang chủ"
+              ><img
+                src="images/brand.webp"
+                alt=""
+                width="40"
+                height="40"
+              /><span>Sora<i>Vynx</i></span></a
+            >
+            <p>Không gian của bạn.<br />Trải nghiệm theo cách của bạn.</p>
+            <span class="tag">STELLA SORA · WINDOWS</span>
+          </div>
+          <div class="footer-col">
+            <h3>KHÁM PHÁ</h3>
+            <a href="shop.html">Cửa hàng key</a
+            ><a href="product.html">Về SoraVynx</a
+            ><a href="guide.html">Hướng dẫn sử dụng</a>
+          </div>
+          <div class="footer-col">
+            <h3>THÔNG TIN</h3>
+            <a href="orders.html">Đơn đã lưu</a
+            ><a href="support.html#faq">Câu hỏi thường gặp</a
+            ><a href="policy.html">Chính sách & quyền riêng tư</a>
+          </div>
+          <div class="footer-col">
+            <h3>KẾT NỐI</h3>
+            <a href="https://discord.com/app" target="_blank" rel="noopener"
+              >Discord ↗</a
+            ><button
+              data-copy="@vsc.plus"
+              aria-label="Sao chép Discord @vsc.plus"
+            >
+              @vsc.plus
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="8" y="8" width="12" height="12" rx="2" />
+                <path d="M16 8V4H4v12h4" />
+              </svg></button
+            ><a
+              href="https://github.com/bao123e/SoraVynx"
+              target="_blank"
+              rel="noopener"
+              >Dự án trên GitHub ↗</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© 2026 SoraVynx. Dự án độc lập, không thuộc nhà phát hành Stella
+            Sora.</span
+          ><span
+            >Made for your next adventure.
+            <span aria-hidden="true">✦</span></span
+          >
+        </div>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <noscript
+      ><div class="notice">
+        Bật JavaScript để dùng giỏ hàng và tạo yêu cầu. Bạn vẫn có thể xem nội
+        dung và liên hệ Discord @vsc.plus.
+      </div></noscript
+    >
+  </body>
+</html>
