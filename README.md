@@ -2,7 +2,9 @@
 
 Website HTML5/CSS3/JavaScript giới thiệu SoraVynx và đặt key thủ công qua Discord **@vsc.plus**.
 
-**Website:** https://bao123e.github.io/soravynx.github.io/
+**Tên miền đã chuẩn bị:** https://soravynx.online/ — chờ bật GitHub Pages và cấu hình DNS.
+
+**Đường dẫn GitHub Pages mặc định:** https://bao123e.github.io/soravynx.github.io/
 
 Repo thuộc tài khoản `bao123e`, vì vậy GitHub Pages chạy tại đường dẫn trên. Tên miền `soravynx.github.io` chỉ dành cho tài khoản/tổ chức GitHub tên `soravynx`; tên repo dưới `bao123e` không thay đổi tên miền đó. Có thể dùng custom domain nếu chủ dự án sở hữu và cấu hình DNS của domain.
 
@@ -61,7 +63,9 @@ Website không thu tiền, tự cấp key, gửi đơn sang Discord hoặc thự
 
 ## GitHub Pages
 
-Cấu hình: **Settings → Pages → Deploy from a branch → main → / (root)**. Mỗi lần push vào main, GitHub Pages sẽ cập nhật website. Không cần workflow build, Node hay máy chủ riêng.
+Cấu hình: **Settings → Pages → Deploy from a branch → main → / (root)**. Tên miền riêng `soravynx.online` đã có trong tệp `CNAME`. Làm theo [hướng dẫn tên miền](docs/TEN-MIEN.md) để nhập DNS tại Network Solutions và bật HTTPS.
+
+Mỗi lần push vào main, GitHub Pages sẽ cập nhật website. Không cần workflow build, Node hay máy chủ riêng.
 
 ## Yêu cầu bài tập
 
