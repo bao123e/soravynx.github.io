@@ -22,3 +22,7 @@ Chromium dùng cùng dòng engine với Chrome/Edge hiện đại, nhưng chưa 
 Kết quả tự động chỉ hỗ trợ kiểm tra truy cập, không thay thế rà soát đầy đủ bằng công nghệ hỗ trợ. Website chưa có máy chủ đơn hàng, cổng thanh toán, hệ thống kích hoạt key hay gửi tin Discord tự động; không có giao dịch thật hoặc chức năng game nào được thực hiện trong kiểm thử.
 
 Các báo cáo máy đọc nằm trong thư mục qa/ của checkout nguồn. Repo xuất sang GitHub có website ngay tại thư mục gốc, kèm nguồn kiểm thử và tài liệu; không chứa node_modules, browser binaries, credentials hay dữ liệu khách.
+
+## Rà lại PDF và tên miền thật
+
+Đã chạy lại acceptance test trên https://soravynx.online/ trong đợt rà PDF ngày 09/11/2026. Kiểm tra W3C Nu HTML Checker phát hiện một lỗi ARIA trên div minh họa trang chủ; đã bổ sung role="img". Kết quả sau sửa và giới hạn đánh giá được ghi ở [RA-SOAT-PDF.md](RA-SOAT-PDF.md), báo cáo máy đọc ở qa/html-validation.json.

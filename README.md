@@ -74,3 +74,5 @@ Trang chủ + 7 trang con, semantic HTML5, form validation, giỏ hàng/lịch s
 Template AppLab được chọn trên Freebiesbug và tùy biến cho SoraVynx. Xem [SOURCES.md](SOURCES.md), [đối chiếu yêu cầu](docs/DOI-CHIEU-YEU-CAU.md) và [kết quả kiểm thử](docs/KIEM-THU.md).
 
 Mã nguồn được để đầy đủ, không chỉ đưa ZIP vào repo. Nếu nộp bài, tải Code → Download ZIP, giải nén rồi đóng gói với tên `<tên đăng nhậpSV>_WEB302_Assignment1.zip`. Không kèm PDF đề bài hoặc PSD dung lượng lớn; PSD gốc có link trong SOURCES.md. Sinh viên cần tự đọc, điều chỉnh và tuân thủ quy định ghi nhận nguồn/công cụ của môn học.
+
+Bản rà từng tiêu chí theo PDF, vị trí HTML5/CSS3, module và các giới hạn xác minh: [docs/RA-SOAT-PDF.md](docs/RA-SOAT-PDF.md).

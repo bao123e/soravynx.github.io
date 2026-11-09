@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-09",
+  "validator": "W3C Nu HTML Checker",
+  "scope": "8 local HTML sources; index revalidated after ARIA role correction",
+  "result": [
+    {
+      "file": "cart.html",
+      "errors": [],
+      "warnings": [],
+      "info_count": 15
+    },
+    {
+      "file": "guide.html",
+      "errors": [],
+      "warnings": [],
+      "info_count": 13
+    },
+    {
+      "file": "index.html",
+      "errors": [],
+      "warnings": [],
+      "info_count": 17
+    },
+    {
+      "file": "orders.html",
+      "errors": [],
+      "warnings": [],
+      "info_count": 13
+    },
+    {
+      "file": "policy.html",
+      "errors": [],
+      "warnings": [],
+      "info_count": 13
+    },
+    {
+      "file": "product.html",
+      "errors": [],
+      "warnings": [],
+      "info_count": 13
+    },
+    {
+      "file": "shop.html",
+      "errors": [],
+      "warnings": [],
+      "info_count": 14
+    },
+    {
+      "file": "support.html",
+      "errors": [],
+      "warnings": [],
+      "info_count": 14
+    }
+  ]
+}
